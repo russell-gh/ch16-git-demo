@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div div {
+        width: 250px;
+        height: 90px;
+        background-color: red;
+        /* margin: 10px; */
+      }
+
+      .container.grid {
+        display: grid;
+        height: 600px;
+        background-color: aquamarine;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 125px);
+        gap: 10px;
+
+        /* the children inside the cells */
+        justify-items: center;
+        align-items: center;
+
+        /* all the cells inside the container */
+        justify-content: center;
+        align-content: center;
+      }
+
+      .container.flex {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container grid">
+      <div class="container flex">
+        <div><a href="#">Link 1</a></div>
+        <div><a href="#">Link 2</a></div>
+        <div><a href="#">Link 3</a></div>
+      </div>
+      <div>2 Lorem ipsum dolor sit</div>
+      <div>3 Lorem ipsum dolor sit</div>
+      <div class="four">4 Lorem ipsum dolor sit</div>
+      <div class="five">5 Lorem ipsum dolor sit</div>
+      <div class="six">6 Lorem ipsum dolor sit</div>
+      <div>7 Lorem ipsum dolor sit</div>
+      <div>8 Lorem ipsum dolor sit</div>
+      <div>9 Lorem ipsum dolor sit</div>
+    </div>
+  </body>
+</html>
